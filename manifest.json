@@ -1,0 +1,20 @@
+{
+  "name":"YouTube Ad Skipper",
+  "short_name": "YouTube Ad Skipper",
+  "description":"YouTube Ad Skipper skippes youtube ad after 5 seconds if the ad is skipable. It doesn't blocks ad",
+  "manifest_version": 2,
+  "version":"1.0.0",
+  "author":"Azharuddin Khan",
+  "homepage_url": "https://github.com/azharuddinkhan8898/",
+  "content_scripts":[
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js":["script.js"],
+      "run_at": "document_end",
+      "all_frames": true
+    }
+  ],
+  "icons": {
+    "128": "logo.png"
+  }
+}
